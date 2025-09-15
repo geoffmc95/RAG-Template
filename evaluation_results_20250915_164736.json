@@ -1,0 +1,157 @@
+{
+  "timestamp": "20250915_164736",
+  "summary": {
+    "total_queries": 8,
+    "avg_response_time": 1.716087818145752,
+    "avg_scores": {
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "correctness_score": 4.25,
+      "semantic_similarity_score": 0.6349086457683808
+    },
+    "category_performance": {
+      "dental_coverage": {
+        "avg_score": 5.0,
+        "num_queries": 2
+      },
+      "vision_coverage": {
+        "avg_score": 5.0,
+        "num_queries": 3
+      },
+      "exclusions": {
+        "avg_score": 3.0,
+        "num_queries": 1
+      },
+      "general_policy": {
+        "avg_score": 4.0,
+        "num_queries": 1
+      },
+      "claims_process": {
+        "avg_score": 2.0,
+        "num_queries": 1
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "query": "What is my annual dental coverage limit?",
+      "expected_answer": "$1,500 per calendar year",
+      "actual_answer": "Your annual dental coverage limit is $1,500 per calendar year.",
+      "response_time": 2.3034539222717285,
+      "category": "dental_coverage",
+      "difficulty": "easy",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 5.0,
+      "correctness_feedback": "The generated answer is fully relevant and correct, matching the reference answer exactly.",
+      "semantic_similarity_score": 0.5991628694771851
+    },
+    {
+      "query": "What vision benefits do I have for eye examinations?",
+      "expected_answer": "One eye examination every 24 months for adults, every 12 months for dependent children under 21",
+      "actual_answer": "You are entitled to one eye examination every 24 consecutive months if you are an adult. For dependent children under 21 years of age, one eye examination is covered every 12 consecutive months. The examinations must be performed by a licensed optometrist or ophthalmologist.",
+      "response_time": 1.474428653717041,
+      "category": "vision_coverage",
+      "difficulty": "medium",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 5.0,
+      "correctness_feedback": "The generated answer is fully relevant and correct, providing the same information as the reference answer while also adding details about the requirement for licensed professionals.",
+      "semantic_similarity_score": 0.864520046781575
+    },
+    {
+      "query": "Are there any exclusions for dental coverage?",
+      "expected_answer": "Cosmetic procedures, services not supervised by a dentist",
+      "actual_answer": "Yes, there are several exclusions for dental coverage. These include:\n\n1. Splinting for periodontal reasons (using cast, crowns, or inlays).\n2. Veneers for cosmetic purposes.\n3. Accidental dental services.\n4. Services rendered by a dental hygienist not supervised by a dentist.\n5. Treatment or appliance related to full mouth reconstruction to correct vertical dimension.",
+      "response_time": 2.575039863586426,
+      "category": "exclusions",
+      "difficulty": "medium",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 3.0,
+      "correctness_feedback": "The generated answer is relevant to the user query about exclusions for dental coverage, but it contains inaccuracies and unnecessary details. For example, \"accidental dental services\" is not typically considered an exclusion, and the mention of \"full mouth reconstruction\" may not be relevant to general exclusions. The answer could be more concise and focused on common exclusions.",
+      "semantic_similarity_score": 0.5164779705552109
+    },
+    {
+      "query": "What is the co-insurance rate for dental services?",
+      "expected_answer": "80% coverage (20% patient responsibility)",
+      "actual_answer": "The co-insurance rate for dental services is 80%.",
+      "response_time": 0.868300199508667,
+      "category": "dental_coverage",
+      "difficulty": "easy",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 5.0,
+      "correctness_feedback": "The generated answer is fully relevant and correct, matching the key information provided in the reference answer.",
+      "semantic_similarity_score": 0.546270767313861
+    },
+    {
+      "query": "How much can I claim for contact lenses due to disease?",
+      "expected_answer": "Maximum $200 every two consecutive calendar years with written authorization from physician",
+      "actual_answer": "You can claim up to $200 for contact lenses due to disease every two consecutive calendar years, provided they are medically necessary and you have written authorization from an attending physician.",
+      "response_time": 1.1786367893218994,
+      "category": "vision_coverage",
+      "difficulty": "hard",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 5.0,
+      "correctness_feedback": "The generated answer is fully relevant and correct, providing the same information as the reference answer while also adding clarity about the necessity of medical authorization.",
+      "semantic_similarity_score": 0.6064419871732702
+    },
+    {
+      "query": "What happens to my benefits when I retire?",
+      "expected_answer": "Benefits cease at retirement or termination of employment",
+      "actual_answer": "When you retire, your benefits will cease according to the specific terms outlined in your policy. Coverage for health and dental insurance, long-term disability, and life insurance will end at the earlier of your retirement date, termination of employment, or age limits specified in the policy. For health and dental insurance, coverage will stop on the contract termination date. In the case of life insurance, coverage reduces by 50% at age 65 and ceases at age 70. It's important to review the specific details of your benefits to understand the implications of retirement on your coverage.",
+      "response_time": 2.4314465522766113,
+      "category": "general_policy",
+      "difficulty": "medium",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 4.0,
+      "correctness_feedback": "The generated answer is relevant and provides detailed information about what happens to benefits upon retirement, including specific types of coverage and conditions. However, it could be more concise and still convey the essential information.",
+      "semantic_similarity_score": 0.6158929818781413
+    },
+    {
+      "query": "How long do I have to submit claims?",
+      "expected_answer": "Claims must be submitted within 24 months of receiving services or supplies",
+      "actual_answer": "Claims must be submitted within four (4) months and no later than 24 months of receiving services or supplies, or the end of the Extended Health Benefit. For Long Term Disability benefits, written notice of claim must be received within 90 days following the end of the elimination period, or within six (6) months of the termination of the Long Term Disability benefit.",
+      "response_time": 1.7509586811065674,
+      "category": "claims_process",
+      "difficulty": "medium",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 2.0,
+      "correctness_feedback": "The generated answer provides relevant information regarding the submission of claims, but it contains inaccuracies regarding the time frame, as it states both four months and 24 months, which could confuse the user.",
+      "semantic_similarity_score": 0.7431939081385508
+    },
+    {
+      "query": "What is the maximum for visual training benefits?",
+      "expected_answer": "$150 lifetime maximum provided by registered optometrist or ophthalmologist",
+      "actual_answer": "The maximum for visual training benefits is $150 in a lifetime.",
+      "response_time": 1.1464378833770752,
+      "category": "vision_coverage",
+      "difficulty": "hard",
+      "faithfulness_score": 1.0,
+      "faithfulness_feedback": "YES",
+      "relevancy_score": 1.0,
+      "relevancy_feedback": "YES",
+      "correctness_score": 5.0,
+      "correctness_feedback": "The generated answer is relevant and fully correct, matching the reference answer in both content and clarity.",
+      "semantic_similarity_score": 0.587308634829252
+    }
+  ]
+}
