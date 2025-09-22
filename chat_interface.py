@@ -35,7 +35,7 @@ class InsuranceChatAgent:
     
     def setup_system(self):
         """Initialize the RAG system and chat engine."""
-        print("🏥 Initializing Medical Insurance Chat Agent...")
+        print("Initializing Medical Insurance Chat Agent...")
         
         # Load or create index
         self.index = self._load_or_create_index()
@@ -66,7 +66,7 @@ class InsuranceChatAgent:
         # Store query engine for fallback
         self.query_engine = query_engine
         
-        print("✅ Chat agent ready!")
+        print("Chat agent ready!")
     
     def _load_or_create_index(self):
         """Load existing index or create new one."""
@@ -179,36 +179,36 @@ def main():
             user_input = input("\n💬 You: ").strip()
             
             if user_input.lower() in ['quit', 'exit', 'bye']:
-                print("👋 Goodbye! Stay healthy!")
+                print("Goodbye! Stay healthy!")
                 break
-            
+
             if user_input.lower() == 'reset':
                 agent.reset_conversation()
                 continue
-            
+
             if user_input.lower() == 'help':
-                print("\n💡 Suggested questions:")
+                print("\nSuggested questions:")
                 for i, question in enumerate(agent.get_suggested_questions(), 1):
                     print(f"   {i}. {question}")
                 continue
-            
+
             if not user_input:
                 print("Please enter a question or type 'help' for suggestions.")
                 continue
-            
-            print("🤔 Thinking...")
+
+            print("Thinking...")
             start_time = time.time()
             response = agent.chat(user_input)
             response_time = time.time() - start_time
-            
-            print(f"\n🏥 Agent: {response}")
-            print(f"\n⏱️  Response time: {response_time:.2f} seconds")
+
+            print(f"\nAgent: {response}")
+            print(f"\nResponse time: {response_time:.2f} seconds")
             
         except KeyboardInterrupt:
-            print("\n\n👋 Goodbye! Stay healthy!")
+            print("\n\nGoodbye! Stay healthy!")
             break
         except Exception as e:
-            print(f"\n❌ An error occurred: {e}")
+            print(f"\nAn error occurred: {e}")
 
 if __name__ == "__main__":
     main()
