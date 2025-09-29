@@ -114,18 +114,6 @@ interface.launch(
 )
 ```
 
-## 🌟 Interface Comparison
-
-| Feature                 | Streamlit                    | Gradio              |
-| ----------------------- | ---------------------------- | ------------------- |
-| **Design**              | Professional, customizable   | Simple, clean       |
-| **Chat Memory**         | ✅ Full conversation history | ✅ Session-based    |
-| **Source Citations**    | ✅ Detailed with metadata    | ✅ Formatted text   |
-| **Suggested Questions** | ✅ Sidebar buttons           | ✅ Inline buttons   |
-| **Mobile Support**      | ✅ Responsive                | ✅ Mobile-optimized |
-| **Customization**       | ✅ High (CSS, themes)        | ✅ Medium           |
-| **Sharing**             | ✅ Via Streamlit Cloud       | ✅ Built-in sharing |
-| **Authentication**      | ✅ Via extensions            | ✅ Built-in         |
 
 ## 🎯 Usage Tips
 

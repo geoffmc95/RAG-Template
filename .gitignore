@@ -1,0 +1,25 @@
+# Environment variables
+.env
+*.env
+
+# Data directories (if you don't want to commit large datasets)
+data/
+
+# Python cache and virtual environments (recommended additions)
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Storage directory (based on your README)
+storage/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
